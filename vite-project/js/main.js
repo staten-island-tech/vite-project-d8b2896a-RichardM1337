@@ -1,5 +1,5 @@
 import "../styles/style.css";
-
+// use npm i on any new computers
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
