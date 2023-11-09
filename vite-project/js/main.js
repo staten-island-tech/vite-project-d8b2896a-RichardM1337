@@ -11,16 +11,17 @@ const DOMSelectors = {
   post2015: document.querySelector(".post2015"),
   dystopian: document.querySelector(".dystopian"),
 };
-const gosSelectors = {
-  name: gosling.forEach((i) => i.name),
-  genre: gosling.forEach((i) => i.genre),
-  release: gosling.forEach((i) => i.release),
-};
-DOMSelectors.movielist.innerHTML = `<div class="innercard">
-    <h1 class="name">${gosSelectors.name}</h1>
-    <p class="release"> released in ${gosSelectors.name}</p>
-    <p class="genre"> its genre is ${gosSelectors.genre}</p>
-  </div>`;
+
+gosling.forEach(
+  (i) => (
+    console.log(i),
+    (DOMSelectors.movielist.innerHTML = `<div class="innercard">
+<h1 class="name">${i.name}</h1>
+<p class="release"> released in ${i.release}</p>
+<p class="genre"> its genre is ${i.genre}</p>
+</div>`)
+  )
+);
 
 /*
 document.querySelector("#app").innerHTML = `

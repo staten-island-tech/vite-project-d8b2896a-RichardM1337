@@ -28,4 +28,5 @@ const gosling = [
     genre: "Romance",
   },
 ];
+
 export { gosling };
