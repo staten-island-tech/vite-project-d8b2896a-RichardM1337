@@ -1,0 +1,10 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    --darkpurple:#693cd2;
+    --green:#CDDC39;
+    --purple:#673AB7;
+    --lightpurple:#D1C4E9;
+    --text:#212121
+  }

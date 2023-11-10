@@ -1,9 +1,10 @@
 import "../style/style.css";
+import "../style/background.css";
 import javascriptLogo from "../javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 import { gosling } from "./gosling.js";
-
+// images go in public folder, and can be freferred to globally
 const DOMSelectors = {
   theme1: document.querySelector(".theme1"),
   theme2: document.querySelector(".theme2"),
@@ -12,16 +13,16 @@ const DOMSelectors = {
   dystopian: document.querySelector(".dystopian"),
 };
 
-gosling.forEach(
-  (i) => (
-    console.log(i),
-    (DOMSelectors.movielist.innerHTML = `<div class="innercard">
+gosling.forEach((i) => {
+  const card = document.createElement("div"); // creats div called card
+  card.innerHTML = `<div class="innercard">
+<img src="${i.image}" class="movieimg">
 <h1 class="name">${i.name}</h1>
 <p class="release"> released in ${i.release}</p>
 <p class="genre"> its genre is ${i.genre}</p>
-</div>`)
-  )
-);
+</div>`; // puts stuff
+  DOMSelectors.movielist.appendChild(card); // adds it into this biiiig div called movie list for my liking nyehehehehe
+});
 
 /*
 document.querySelector("#app").innerHTML = `

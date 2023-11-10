@@ -1,0 +1,21 @@
+
+@import url(variables.css);
+.background--custom {
+    background: linear-gradient(90deg, var(--purple), var(--darkpurple), var(--lightpurple));
+    background-size: 300% 300%;
+    animation: gradient 4s alternate infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
