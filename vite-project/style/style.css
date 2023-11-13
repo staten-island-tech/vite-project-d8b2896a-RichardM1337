@@ -8,7 +8,7 @@
     color:var(--text)
   }
   .innercard{
-    background-color: var(--lightpurple);
+    background-color: var(--darkmain);
     border: 20px solid;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     margin:1rem;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
     padding: 20px;
-    border-color:var(--green)
+    border-color:var(--boxcolor)
   }
 .movielist{
   padding:50px;

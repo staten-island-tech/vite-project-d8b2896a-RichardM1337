@@ -3,7 +3,7 @@ const gosling = [
     name: "Barbie",
     image: "public/Barbie.jpg",
     release: 2023,
-    genre: "Dystopian",
+    genre: "Romance",
   },
   {
     name: "Blade Runner 2049",

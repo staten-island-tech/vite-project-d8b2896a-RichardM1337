@@ -1,7 +1,7 @@
 
 @import url(variables.css);
 .background--custom {
-    background: linear-gradient(90deg, var(--purple), var(--darkpurple), var(--lightpurple));
+    background: linear-gradient(90deg, var(--darkmain), var(--maincolor), var(--lightmain));
     background-size: 300% 300%;
     animation: gradient 4s alternate infinite;
     position: absolute;

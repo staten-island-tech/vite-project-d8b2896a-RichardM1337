@@ -2,9 +2,26 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    --darkpurple:#693cd2;
-    --green:#CDDC39;
-    --purple:#673AB7;
-    --lightpurple:#D1C4E9;
+    --maincolor:#693cd2;
+    --boxcolor:#CDDC39;
+    --darkmain:#673AB7;
+    --lightmain:#D1C4E9;
     --text:#212121
   }
+.dark-theme{
+    --maincolor:#9c27b0;
+    --boxcolor:#1d36b3;
+    --darkmain:#7b1fa2;
+    --lightmain:#E1BEE7;
+    --text:#ffff
+    }
+.light-theme{
+    --maincolor:#FFC107;
+    --boxcolor:#CDDC39;
+    --darkmain: #FFA000;
+    --lightmain:#FFECB3;
+    --text:#212121
+
+}
+
+/* learn prefers color scheme */
