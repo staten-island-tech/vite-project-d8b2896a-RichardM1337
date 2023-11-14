@@ -7,11 +7,12 @@ import { setupCounter } from "./counter.js";
 import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
-  theme1: document.querySelector(".theme1"),
-  theme2: document.querySelector(".theme2"),
+  darkcheck: document.querySelector(".darktheme"),
+  lightcheck: document.querySelector(".lighttheme"),
   movielist: document.querySelector(".movielist"),
   post2015: document.querySelector(".post2015"),
-  dystopian: document.querySelector(".dystopian"),
+  romance: document.querySelector(".romance"),
+  cardresetter: document.querySelector(".reset"),
 };
 
 gosling.forEach((i) => {
@@ -23,26 +24,31 @@ gosling.forEach((i) => {
 <p class="genre"> its genre is ${i.genre}</p>
 </div>`; // puts stuff
   DOMSelectors.movielist.appendChild(card); // adds it into this biiiig div called movie list for my liking nyehehehehe
+  DOMSelectors.romance.addEventListener("click", function () {
+    if (i.genre != "Romance") {
+      card.style.display = "none";
+    }
+  });
+  DOMSelectors.cardresetter.addEventListener("click", function () {
+    card.style.display = "block";
+  });
 });
 
-/*
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello tihis webiet </h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
+function destroy(item) {
+  item.innerHTML = "";
+}
 
-setupCounter(document.querySelector("#counter"));
- */
+DOMSelectors.darkcheck.addEventListener("click", function () {
+  let body = document.body;
+  if (body.classList.contains("lighttheme")) {
+    body.classList.remove("lighttheme");
+  }
+  body.classList.add("darktheme");
+});
+DOMSelectors.lightcheck.addEventListener("click", function () {
+  let body = document.body;
+  if (body.classList.contains("darktheme")) {
+    body.classList.remove("darktheme");
+  }
+  body.classList.add("lighttheme");
+});

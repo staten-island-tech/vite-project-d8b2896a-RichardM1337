@@ -6,21 +6,21 @@
     --boxcolor:#CDDC39;
     --darkmain:#673AB7;
     --lightmain:#D1C4E9;
-    --text:#212121
+    --text:#ffff
   }
-.dark-theme{
+.darktheme{
     --maincolor:#9c27b0;
     --boxcolor:#1d36b3;
     --darkmain:#7b1fa2;
     --lightmain:#E1BEE7;
     --text:#ffff
     }
-.light-theme{
+.lighttheme{
     --maincolor:#FFC107;
     --boxcolor:#CDDC39;
     --darkmain: #FFA000;
     --lightmain:#FFECB3;
-    --text:#212121
+    --text:#010101
 
 }
 

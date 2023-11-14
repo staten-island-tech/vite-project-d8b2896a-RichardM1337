@@ -7,16 +7,15 @@
     <title>Vite App</title>
   </head>
   <body>
-    <body class="dark-theme">
-    <body class="light-theme">
     <div class="background--custom"></div>
     <h1 class="heading">hi welcome webite</h1>
-    <select id='theme-picker'>
-      <option value="light" selected>Light</option>
-      <option value="dark">Dark</option>
-    </select>
+    <ul id='theme-picker'>
+      <button class="lighttheme" value="light" selected>Light</button>
+      <button class="darktheme" value="dark" selected>Dark</button>
+    </ul>
     <ul class="filter-button-list">
-      <button class="dystopian">Dystopian movies</button>
+      <button class="romance">romance (not any of us) movies</button>
+      <button class="reset">reset</button>
     </ul>
     <div id="app"></div>
     <ul class="movielist"></ul>
