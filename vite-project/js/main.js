@@ -10,7 +10,6 @@ const DOMSelectors = {
   darkcheck: document.querySelector(".darktheme"),
   lightcheck: document.querySelector(".lighttheme"),
   movielist: document.querySelector(".movielist"),
-  post2015: document.querySelector(".post2015"),
   romance: document.querySelector(".romance"),
   cardresetter: document.querySelector(".reset"),
 };
@@ -18,11 +17,11 @@ const DOMSelectors = {
 gosling.forEach((i) => {
   const card = document.createElement("div"); // creats div called card
   card.innerHTML = `<div class="innercard">
-<img src="${i.image}" class="movieimg">
-<h1 class="name">${i.name}</h1>
-<p class="release"> released in ${i.release}</p>
-<p class="genre"> its genre is ${i.genre}</p>
-</div>`; // puts stuff
+  <img src="${i.image}" class="movieimg">
+  <h1 class="name">${i.name}</h1>
+  <p class="release"> released in ${i.release}</p>
+  <p class="genre"> its genre is ${i.genre}</p>
+  </div>`; // puts stuff
   DOMSelectors.movielist.appendChild(card); // adds it into this biiiig div called movie list for my liking nyehehehehe
   DOMSelectors.romance.addEventListener("click", function () {
     if (i.genre != "Romance") {
