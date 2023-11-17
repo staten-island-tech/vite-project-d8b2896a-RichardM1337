@@ -17,7 +17,7 @@ const DOMSelectors = {
 gosling.forEach((i) => {
   const card = document.createElement("div"); // creats div called card
   card.innerHTML = `<div class="innercard">
-  <img src="${i.image}" class="movieimg">
+  <img src="${i.image}" class="movieimg" alt="${i.name}">
   <h1 class="name">${i.name}</h1>
   <p class="release"> released in ${i.release}</p>
   <p class="genre"> its genre is ${i.genre}</p>

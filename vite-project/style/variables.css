@@ -2,25 +2,26 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
-    --maincolor:#693cd2;
-    --boxcolor:#1d36b3;
-    --darkmain:#673AB7;
-    --lightmain:#D1C4E9;
+    --maincolor:#552981;  /*gradient 2 */
+    --boxcolor:#f8d900; /*outline*/
+    --darkmain:#262253; /* card color, gradient 1 */
+    --lightmain:#745cb5; /* gradient 2 */
     --text:#ffff
+    /* colors are here for code to default to dark mode */
   }
 .darktheme{
-    --maincolor:#9c27b0;
-    --boxcolor:#1d36b3;
-    --darkmain:#7b1fa2;
-    --lightmain:#E1BEE7;
+    --maincolor:#552981;  /*gradient 2 */
+    --boxcolor:#f8d900; /*outline*/
+    --darkmain:#262253; /* card color, gradient 1 */
+    --lightmain:#745cb5; /* gradient 2 */
     --text:#ffff
     }
 .lighttheme{
-    --maincolor:#FFC107;
-    --boxcolor:#CDDC39;
-    --darkmain: #FFA000;
-    --lightmain:#FFECB3;
-    --text:#010101
+    --maincolor:#a095e3;  /*gradient 2 */
+    --boxcolor: #9bee06; /*outline*/
+    --darkmain:#8766d7; /* card color, gradient 1 */
+    --lightmain:#e5c9ff; /* gradient 2 */
+    --text:#ffff
 
 }
 
