@@ -1,6 +1,6 @@
-import "../style/style.css";
-import "../style/background.css";
-import "../style/variables.css";
+import "../styles/style.css";
+import "../styles/background.css";
+import "../styles/variables.css";
 import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
@@ -29,10 +29,6 @@ gosling.forEach((i) => {
     card.style.display = "block";
   });
 });
-
-function destroy(item) {
-  item.innerHTML = "";
-}
 
 DOMSelectors.darkcheck.addEventListener("click", function () {
   let body = document.body;
