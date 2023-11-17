@@ -1,9 +1,6 @@
 import "../style/style.css";
 import "../style/background.css";
 import "../style/variables.css";
-import javascriptLogo from "../javascript.svg";
-import viteLogo from "/vite.svg";
-import { setupCounter } from "./counter.js";
 import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
