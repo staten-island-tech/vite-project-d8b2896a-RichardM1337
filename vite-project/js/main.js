@@ -1,6 +1,6 @@
-import "../styles/style.css";
-import "../styles/background.css";
-import "../styles/variables.css";
+import "../styles/style.css" assert { type: "css" }; // tells code to read as css and not js
+import "../styles/background.css" assert { type: "css" };
+import "../styles/variables.css" assert { type: "css" };
 import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
