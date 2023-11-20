@@ -1,5 +1,5 @@
 
-@import url(variables.module.css);
+@import url(variables.css);
 .background--custom {
     background: linear-gradient(90deg, var(--darkmain), var(--maincolor), var(--lightmain));
     background-size: 300% 300%;
