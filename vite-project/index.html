@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="dark-theme">
+  <body class="">
     <div class="background--custom"></div>
     <h1 class="heading">Ryan Gosling Movies</h1>
-    <ul id='theme-picker'>
-      <button class="lighttheme" value="light" selected>Light</button>
-      <button class="darktheme" value="dark" selected>Dark</button>
-    </ul>
-    <ul class="filter-button-list">
-      <button class="romance">romance (not any of us) movies</button>
-      <button class="reset">reset</button>
-    </ul>
-    <div id="app"></div>
+    <select name="themepicker" class="themepicker">
+      <option value="darktheme" class="darktheme">Dark</option>
+      <option value="lighttheme" class="lighttheme">Light</option>
+    </select>
+    <select name="genreList" class="genreList">
+      <option value="">All</option>
+      <option value="Romance">Romance</option>
+      <option value="Dystopian">Dystopian</option>
+      <option value="Action">Action</option>
+    </select>
     <ul class="movielist"></ul>
-    <div class="innercard">`
+<!--     <div class="innercard">`
       <h1 class="name">name</h1>
       <p class="release"> release</p>
       <p class="genre"> genre</p>
-    </div>
+    </div> -->
     <script type="module" src="/js/main.js"></script>
   </body>
 </html>

@@ -4,11 +4,9 @@ import "../style/variables.css";
 import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
-  darkcheck: document.querySelector(".darktheme"),
-  lightcheck: document.querySelector(".lighttheme"),
+  themepicker: document.querySelector(".themepicker"),
   movielist: document.querySelector(".movielist"),
-  romance: document.querySelector(".romance"),
-  cardresetter: document.querySelector(".reset"),
+  genrelist: document.querySelector(".genreList"),
 };
 
 function createCard(arr) {
@@ -30,25 +28,28 @@ function filterMovies(userGenre) {
   createCard(gosFilter);
 }
 createCard(gosling);
-DOMSelectors.romance.addEventListener("click", function () {
-  filterMovies("Romance");
-});
-DOMSelectors.cardresetter.addEventListener("click", function () {
-  createCard(gosling);
+
+DOMSelectors.genrelist.addEventListener("change", (event) => {
+  if (event.target.value == "") {
+    createCard(gosling);
+  } else {
+    filterMovies(event.target.value);
+  }
 });
 
 /* CSS */
-DOMSelectors.darkcheck.addEventListener("click", function () {
+DOMSelectors.themepicker.addEventListener("change", function () {
   let body = document.body;
-  if (body.classList.contains("lighttheme")) {
-    body.classList.remove("lighttheme");
+  if (this.value == "darktheme") {
+    if (body.classList.contains("lighttheme")) {
+      body.classList.remove("lighttheme");
+    }
+    body.classList.add("darktheme");
   }
-  body.classList.add("darktheme");
-});
-DOMSelectors.lightcheck.addEventListener("click", function () {
-  let body = document.body;
-  if (body.classList.contains("darktheme")) {
-    body.classList.remove("darktheme");
+  if (this.value == "lighttheme") {
+    if (body.classList.contains("darktheme")) {
+      body.classList.remove("darktheme");
+    }
+    body.classList.add("lighttheme");
   }
-  body.classList.add("lighttheme");
 });
