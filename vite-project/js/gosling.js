@@ -3,7 +3,7 @@ const gosling = [
     name: "Barbie",
     image: "/Barbie.jpg",
     release: 2023,
-    genre: "Romance",
+    genre: ["Comedy", "Fantasy"],
   },
   {
     name: "Blade Runner 2049",
@@ -15,13 +15,29 @@ const gosling = [
     name: "Drive",
     image: "/Drive.jpg",
     release: 2011,
-    genre: "Action",
+    genre: ["Action", "Crime"],
   },
   {
     name: "La La Land",
     image: "/LaLa.jpeg",
     release: 2016,
-    genre: "Romance",
+    genre: ["Romance", "Musical"],
+  },
+  {
+    name: "The Gray Man",
+    image: "",
+    release: 2022,
+    genre: "Action",
+  },
+  {
+    name: "The Nice Guys",
+    image: "",
+    release: 2016,
+    genre: "Comedy",
+  },
+  {
+    name: "Only God Forgives",
+    image: "",
   },
 ];
 
