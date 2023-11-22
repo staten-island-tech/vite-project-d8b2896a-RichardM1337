@@ -5,22 +5,22 @@ import { gosling } from "./gosling.js";
 // images go in public folder, and can be freferred to globally
 const DOMSelectors = {
   themepicker: document.querySelector(".themepicker"),
-  movielist: document.querySelector(".movielist"),
+  moviecontainer: document.querySelector(".moviecontainer"),
   genrelist: document.querySelector(".genreList"),
 };
 
 function createCard(arr) {
-  DOMSelectors.movielist.innerHTML = "";
+  DOMSelectors.moviecontainer.innerHTML = "";
   arr.forEach((i) => {
     const card = document.createElement("div"); // creats div called card
     card.classList.add("outercard");
     card.innerHTML = `<div class="innercard">
     <img src="${i.image}" class="movieimg" alt="${i.name}">
     <h1 class="name">${i.name}</h1>
-    <p class="release"> released in ${i.release}</p>
-    <p class="genre"> its genre is ${i.genre}</p>
+    <p class="release">${i.release}</p>
+    <p class="genre">${i.genre[0]}/${i.genre[1]}</p>
     </div>`; // puts stuff
-    DOMSelectors.movielist.appendChild(card);
+    DOMSelectors.moviecontainer.appendChild(card);
   });
 }
 
@@ -32,9 +32,9 @@ createCard(gosling);
 
 DOMSelectors.genrelist.addEventListener("change", (event) => {
   if (event.target.value == "") {
-    createCard(gosling);
+    createCard(gosling); // if value is blank, "All", it wnon't do anything.
   } else {
-    filterMovies(event.target.value);
+    filterMovies(event.target.value); // filter the movies by the value of the input
   }
 });
 
