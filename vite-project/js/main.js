@@ -13,6 +13,7 @@ function createCard(arr) {
   DOMSelectors.movielist.innerHTML = "";
   arr.forEach((i) => {
     const card = document.createElement("div"); // creats div called card
+    card.classList.add("outercard");
     card.innerHTML = `<div class="innercard">
     <img src="${i.image}" class="movieimg" alt="${i.name}">
     <h1 class="name">${i.name}</h1>

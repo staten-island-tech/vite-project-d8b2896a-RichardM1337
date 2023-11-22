@@ -10,6 +10,7 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+    transition:0.3s ease-in-out;
   }
   @keyframes gradient {
     0% {
