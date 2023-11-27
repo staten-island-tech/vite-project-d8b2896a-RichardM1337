@@ -1,6 +1,6 @@
 
 @import url("variables.css");
-.background--custom {
+body{
     background: linear-gradient(90deg, var(--darkmain), var(--maincolor), var(--lightmain));
     background-size: 300% 300%;
     animation: gradient 4s alternate infinite;
@@ -11,6 +11,9 @@
     width: 100%;
     z-index: -1;
     transition:0.3s ease-in-out;
+    background-attachment: fixed;
+    background-position:center;
+
   }
   @keyframes gradient {
     0% {

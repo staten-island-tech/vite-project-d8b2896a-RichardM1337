@@ -47,6 +47,12 @@ const gosling = [
     release: "release year",
     genre: ["based on 2", "entries in a dictionary"],
   },
+  {
+    name: "luh calm fit",
+    image: "",
+    release: "release too cray",
+    genre: ["chill", "bird"],
+  },
 ];
 
 export { gosling };

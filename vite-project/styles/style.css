@@ -4,7 +4,7 @@
     margin: 0;
         padding: 0;
     }
-    .name,.release,.genre{
+    .name,.release,.genre,.heading{
       color:var(--text)
     }
     .innercard{
@@ -15,12 +15,14 @@
       text-align: center;
       justify-content: center;
       border-radius: 50px;
-      margin:1rem;
+      margin:2rem;
       box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
       padding: 20px;
       border-color:var(--boxcolor);
       transition:0.3s ease-in-out;
-      width:250px;
+      align-items:center;
+      margin-top: 1.5rem 0rem;
+      margin-bottom: 10rem;
     }
     .innercard:hover{
       border: 20px solid #82deff;
@@ -28,15 +30,15 @@
       transform: translateY(-30px);
     }
   .moviecontainer{
-    padding:50px;
     display:flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
   }
-  .movieimg{max-width: 250px;
-    max-height: 250px;
-    border-radius: 25px;}
-  .heading{
-    color:var(--text)
-  }
+  .movieimg{
+    max-width: 225px;
+    border-radius: 25px;
+    transition: 0.25s ease-in-out;
+  display:flex}
+
