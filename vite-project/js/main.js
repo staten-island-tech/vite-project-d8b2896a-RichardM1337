@@ -17,8 +17,8 @@ function createCard(arr) {
     card.innerHTML = `<div class="innercard">
     <img src="${i.image}" class="movieimg" alt="${i.name}">
     <h1 class="name">${i.name}</h1>
-    <p class="release">${i.release}</p>
-    <p class="genre">${i.genre[0]}/${i.genre[1]}</p>
+    <p class="release"> ${i.release}</p>
+    <p class="genre"> ${i.genre[0]}/${i.genre[1]}</p>
     </div>`; // puts stuff
     DOMSelectors.moviecontainer.appendChild(card);
   });
@@ -32,9 +32,9 @@ createCard(gosling);
 
 DOMSelectors.genrelist.addEventListener("change", (event) => {
   if (event.target.value == "") {
-    createCard(gosling); // if value is blank, "All", it wnon't do anything.
+    createCard(gosling);
   } else {
-    filterMovies(event.target.value); // filter the movies by the value of the input
+    filterMovies(event.target.value);
   }
 });
 

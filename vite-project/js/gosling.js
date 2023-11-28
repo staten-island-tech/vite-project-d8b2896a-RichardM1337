@@ -25,33 +25,30 @@ const gosling = [
   },
   {
     name: "The Gray Man",
-    image: "",
+    image:
+      "https://www.poresto.net/u/fotografias/m/2021/3/4/f768x1-58589_58716_5050.jpg",
     release: 2022,
     genre: ["Action", "Thriller"],
   },
   {
     name: "The Nice Guys",
-    image: "",
+    image: "https://d.ibtimes.co.uk/en/full/1517821/nice-guys-poster.jpg?w=345",
     release: 2016,
     genre: ["Comedy", "Action"],
   },
   {
     name: "Lars and the Real Girl",
-    image: "",
+    image:
+      "https://image.tmdb.org/t/p/original/nkAt4a7KIPc7Fi1BhxNHhYYbe2b.jpg",
     release: "2007",
     genre: ["Comedy", "Drama"],
   },
   {
-    name: "example div movie name",
-    image: "",
-    release: "release year",
-    genre: ["based on 2", "entries in a dictionary"],
-  },
-  {
-    name: "luh calm fit",
-    image: "",
-    release: "release too cray",
-    genre: ["chill", "bird"],
+    name: "Only God Forgives",
+    image:
+      "https://th.bing.com/th/id/OIP.WE1ggLYzzXnK1wc5jdXmkQHaLH?w=198&h=297&c=7&r=0&o=5&pid=1.7",
+    release: "2013",
+    genre: ["Action", "Thriller"],
   },
 ];
 
