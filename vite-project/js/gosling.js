@@ -1,4 +1,4 @@
-const gosling = [
+const goslingDict = [
   {
     name: "Barbie",
     image: "/Barbie.jpg",
@@ -55,4 +55,9 @@ const gosling = [
   },
 ];
 
-export { gosling };
+export const gosling = goslingDict.map((x) => ({
+  name: x.name,
+  image: x.image,
+  release: x.release,
+  genre: x.genre,
+}));
